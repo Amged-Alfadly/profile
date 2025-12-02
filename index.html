@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            height: 120vh;  
+            transition: 10s;     
+        }
+        *{
+            box-sizing: border-box;
+            transition: 5s;
+        }
+        .continar{
+            position: relative;
+            top: 20px;
+            left: 43%;
+            width: 600px;
+            height: 800px;
+            box-shadow: -10px 10px 50px black;
+            overflow: hidden;
+            z-index: 11;
+            transition: 10s;
+        }
+        .house{
+            width: 600px;
+            height: 600px;
+            background-color: antiquewhite;
+            padding-right: 10px;
+            padding-left: 10px;
+            border:solid black 3px;
+            border-top:solid 1px black;
+            border-bottom:solid 1px black;
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+/******************************part one in house*********************** */
+        div.partone{
+            height: 100%;
+            width: 150px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 2px 2px 10px black;
+        }
+        div.partone .one{
+            width: 40%;
+            height: 100%;
+            border-left: solid black 2px;
+            border-right: solid 2px black;
+        }
+        div.partone .tow{
+            width: 40%;
+            height: 100%;
+            border-left: solid black 2px;
+            border-right: solid 2px black;
+        }
+        .windows{
+            width: 100%;
+            height: 130px;
+            padding-top:20px;
+        }
+        .windows .nq{
+            width: 100%;
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+            margin-bottom:20px;
+            overflow:none;
+        }
+        .windows .nq p{
+            color: white;
+        }
+        .windows .win{
+            width: 100%;
+            height: 80px;
+            border-top:3px black solid;
+            border-radius: 30px;
+            background-color: white;
+            background-image: url("qam1.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .windows .win .in{
+            margin-top: 30px;
+            width: 100%;
+            height: 62%;
+            background-color: white;
+            border:solid .5px black;
+            border-top: solid darkblue 3px; 
+            background-image: url("star.png");
+            background-size: cover;
+        }
+/******************************part tow in house*********************** */
+        div.parttow{
+            height: 100%;
+            width: 200px;
+            display: flex;
+            justify-content:center;
+        }
+        div.parttow .one{
+            width: 40px;
+            height: 100%;
+            padding-top: 50px;
+            border-left: solid black 2px;
+        }
+        div.parttow .tow{
+            width: 100px;
+            height: 100%;
+            border: solid black 2px;
+            border-top: none;
+            border-bottom: none;
+            box-shadow: 5px 2px 10px black;
+            display: flex;
+            justify-content: space-around;
+        }
+        div.parttow .three{
+            width: 40px;
+            height: 100%;
+            padding-top:50px;
+            border-right: solid black 2px;
+        }
+        div.parttow  .windows{
+            width: 100%;
+            height: 60px;
+            border-top:solid 2px black;
+            border-radius: 20px;
+            background-color: white;
+            margin-top: 50px;
+            background-image: url("qam1.jpg");
+            background-size: contain;
+        }
+        div.parttow .win{
+            height: 100%;
+            width: 40%;
+        }
+        div.parttow .win .windows{
+            width: 100%;
+            height: 60px;
+            border: solid 2px black;
+            border-radius: 0;
+            background-color: rgb(0, 0, 0);
+            margin-top: 50px;
+            overflow: hidden;
+            background-color: black;
+        }
+        div.parttow .windows .in{
+            height: 100%;
+            width: 100%;
+            border-top: solid 3px darkblue;
+            background-color: white;
+            background-image: url("star.png");
+            background-size: cover;
+        }
+        div.parttow .win .in{
+            margin-top: 8px;
+            border: none;
+            border-top:solid 2px black;
+            background-image: url("star.png");
+            background-size: cover;
+        }
+/******************************part three in house*********************** */
+        div.partthree{
+            height: 100%;
+            width: 150px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 2px 2px 10px black;
+        }
+        div.partthree .one{
+            width: 40%;
+            height: 100%;
+            border-left: solid black 2px;
+            border-right: solid 2px black;
+        }
+        div.partthree .tow{
+            width: 40%;
+            height: 100%;
+            border-left: solid black 2px;
+            border-right: solid 2px black;
+        }
+/******************************part four in dontinar*********************** */
+        div.partfour{
+            width: 100%;
+            height: 200px;
+            border:solid black 2px;
+            background-color: white;
+            display: flex;
+        }
+        .partfour div{
+            width: 200px;
+            height: 100%;
+            border:solid black 2px;
+        }
+        .partfour  .d{
+            width: 100%;
+            height: 20px;
+            border: solid 2px black;
+        }
+/**************************part place in graw****************************/
+        div.place{
+            margin-top: 20px;
+            width: 200%;
+            height: 800px;
+            background-color:green;
+            z-index: 121;
+        }
+        .place button{
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: azure;
+            position: absolute;
+            top:700px;
+            left: 100px;
+        }
+/***************************part of sun and moon ***************************************/
+        div.sun{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            top: 20px;
+            left: 1900px;
+            background-color: rgb(227, 231, 46);
+            box-shadow: 3px 3px 70px rgb(204, 245, 0);
+            transition: 10s;
+            z-index: -1;
+        }
+        div.moon{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            top: 20px;
+            left: 300px;
+            background-color: rgb(151, 172, 172);
+            box-shadow: 3px 3px 70px rgb(255, 255, 255);  
+            transition: 10s;
+            display: none;
+            z-index: -2;
+        }
+/*****************************part of starts******************************/
+        div.start div{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 10px 10px 30px white;
+            position: absolute;
+            border-radius: 10px;
+        }
+        div.start .one{
+            width: 5px;
+            height: 5px;
+            top: 0;
+            left:0px;
+            border-radius: 5px;
+            z-index: -2;
+            animation: moveFrame1 8s infinite ease-in-out;
+        }
+        div.start .tow{
+            width: 8px;
+            height: 8px;
+            top: 100px;
+            left: 200px;
+            border-radius: 10px;
+            z-index: -2;
+            animation: moveFrame2 7s infinite linear;
+        }
+        div.start .three{
+            top: 150px;
+            left: 300px;
+            border-radius: 10px;
+            z-index: -2;
+            animation: moveFrame3 4.5s infinite linear;
+        }
+        div.start .four{
+            width: 5px;
+            height: 5px;
+            top: 357px;
+            left: 230px;
+            border-radius: 10px;
+            z-index: -1;
+            animation: moveFrame4 2.5s infinite linear;
+        }
+        div.start .five{
+            top: 200px;
+            left: 200px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .s{
+            top: 200px;
+            left: 1300px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .seven{
+            top: 100px;
+            left: 1400px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .eight{
+            width: 7px;
+            height: 7px;
+            top: 195px;
+            left:1855px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .nine{
+            top: 245px;
+            left:1515px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .ten{
+            top: 98px;
+            left: 1720px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .elven{
+            top: 20px;
+            left: 1890px;
+            border-radius: 10px;
+            z-index: -2;
+        }
+        div.start .towten{
+            top: 125px;
+            left: 1650px;
+            border-radius: 10px;
+            z-index: -2; 
+        }  
+        @keyframes moveFrame1 {
+            0%   {top:0px;left: 0px;}
+            50%  {top:300px;left: 180px;}
+            100% {top:850px; left:360px;}
+        }  
+        @keyframes moveFrame2 {
+            0%   {top:0;left:100px;}
+            50%  {top: 400px;left: 400px;}
+            100% {top:850px; left:600px}
+        }  
+        @keyframes moveFrame3 {
+            0%   {top:0;left:1400px;}
+            50%  {top:400px;left:1700px;}
+            100% {top:850px; left:1900px}
+        } 
+        @keyframes moveFrame4 {
+            0%   {top:0;left:350px;}
+            50%  {top:400px;left:400px;}
+            100% {top:850px; left:450px;width: 20px;height: 20px;background-color: rgb(175, 32, 32);border-radius: 20px;}
+        }  
+
+        /*  */
+    </style>
+</head>
+<body id="by">
+    <div id="continar" class="continar">
+        <div class="house">
+            <div class="partone">
+                <div class="one">
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win1" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div  id="win2" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win3" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win4" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tow">
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win5" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win6" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win7" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win8" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parttow">
+                <div class="one">
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                </div>
+                <div class="tow">
+                    <div class="win">
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="win">
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                        <div class="windows">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                    <div class="windows">
+                        <div class="in"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="partthree">
+                <div class="one">
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win9" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win10" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win11" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win12" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tow">
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win13" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win14" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win15" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                    <div class="windows">
+                        <div class="nq">
+                            <p>||||||||||||||||||</p>
+                        </div>
+                        <div id="win16" class="win">
+                            <div class="in"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+             <div class="partfour">
+                <div class="one">
+                    <div class="step">
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                    </div>
+                </div>
+                <div class="tow">
+                    <div class="step">
+                        
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="step">
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="place">
+        <BUtton id="but" value="1" onclick="dark()">تحويل</BUtton>
+    </div>
+    <div id="sun" class="sun"></div>
+    <div id="moon" class="moon"></div>
+    <div class="start">
+        <div class="one"></div>
+        <div class="tow"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="s"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+        <div class="elven"></div>
+        <div class="twoten"></div>
+    </div>
+    <script>
+        function dark(){
+            if(document.getElementById('but').value=='1'){
+                document.getElementById('continar').style.boxShadow="10px 10px 50px white";
+                document.getElementById('by').style.background='black';
+                document.getElementById('moon').style.marginTop='20px';
+                document.getElementById('moon').style.display='inline';
+                document.getElementById('sun').style.marginTop='1200px';
+                document.getElementById('but').value=2;
+            }
+            else if(document.getElementById('but').value==2){
+                document.getElementById('continar').style.boxShadow="10px -10px 50px black";
+                document.getElementById('by').style.background='white';
+                document.getElementById('sun').style.marginTop='20px';
+                document.getElementById('moon').style.marginTop='1200px';
+                document.getElementById('but').value=1;
+            }
+        }
+    </script>
+</body>
+</html>
